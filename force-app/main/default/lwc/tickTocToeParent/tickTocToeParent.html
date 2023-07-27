@@ -1,0 +1,31 @@
+<template>
+    <lightning-card aria-label="tik tak toe">
+    <lightning-input name="PlayerName1" label="player 1 Nmae" onchange={handleChange}></lightning-input>
+    
+    <lightning-input name="PlayerName2" label="player 2 Name" onchange={handleChange}></lightning-input>
+   
+
+    {player1}
+    <lightning-progress-bar value={player1Progress}></lightning-progress-bar>
+    {player2}
+    <lightning-progress-bar value={player2Progress}></lightning-progress-bar>
+<lightning-input type="checkbox" label="Select" onchange={handleOnchange}></lightning-input>
+<template if:true={flag}>
+    <lightning-combobox
+    name="City"
+    label="City"
+    value={value}
+    placeholder="Select city"
+    options={options}
+    onchange={handleChange} ></lightning-combobox>
+    City name is {value}.
+</template>
+<template if:false={flag}>
+Click om box option to choose.
+</template>
+
+
+
+
+</lightning-card>
+</template>

@@ -1,0 +1,18 @@
+<template>
+    <lightning-card label="Calculating two variables">
+    
+    <lightning-input type="number" label="first variable" onchange={handlerChange}></lightning-input>
+    <lightning-input type="number" label="second variable" onchange={handlerChange1}></lightning-input>
+
+     <br><br>
+    <lightning-button variant="brand" label="Add" title="Primary action" onclick={add} class="slds-m-left_x-small"></lightning-button>
+
+    <lightning-button variant="brand" label="Mul" title="Primary action" onclick={mul} class="slds-m-left_x-small"></lightning-button>
+
+    <lightning-button variant="brand" label="Div" title="Primary action" onclick={div} class="slds-m-left_x-small"></lightning-button>
+
+    <lightning-button variant="brand" label="Per" title="Primary action" onclick={sub} class="slds-m-left_x-small"></lightning-button>
+        <br><br>
+    Final answer is : {ans}
+</lightning-card>
+</template>

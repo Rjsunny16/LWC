@@ -1,0 +1,10 @@
+<template>
+    <lightning-card label="Upper most Parent" title="Upper most Parent">
+    <c-p-ch1 label="child 1" onprogressvalueparentchange={changevaluefromchild1}></c-p-ch1>
+    <c-p-ch2 label ="child 2" onfinalvalue={changeValue}></c-p-ch2>
+    <br/>
+    <lightning-button class="slds-p-medium" label="total child Calculation" onclick={parentChange}></lightning-button>
+<br/>
+    total sum is {totalSum}
+</lightning-card>
+</template> 

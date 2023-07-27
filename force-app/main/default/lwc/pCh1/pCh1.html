@@ -1,0 +1,9 @@
+<template>
+    <lightning-card label="Child 1 for upper most Parent" title="Child 1 for upper most Parent">
+    <c-ch1 label="parent to child1" onprogressvaluechange={hanldeProgressValueChange}></c-ch1>
+    <c-ch2 label="parent to child2" onprogressvaluechange1={hanldeProgressValueChange1}></c-ch2>
+    <lightning-button label="child Calculation" onclick={childChange}></lightning-button>
+    <br/>
+    Parent 1 to child sumation : {totalChild}
+</lightning-card>
+</template>
