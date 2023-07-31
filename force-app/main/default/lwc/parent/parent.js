@@ -4,6 +4,7 @@ export default class Parent extends LightningElement {
     @track child2;
     @track child1;
     @track totalSum;
+    
     parentChange(){
         console.log('Parent connected callback',this.child1,this.child2);
         if(this.child1!=null && this.child2!=null){
